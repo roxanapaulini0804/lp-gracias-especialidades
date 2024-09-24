@@ -1,0 +1,113 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.bloque1 {
+  height: 100vh;
+  background-color: #E5E5E5;
+  overflow: hidden;
+  position: relative;
+}
+
+.bloque1TitleContainer {
+  // background-color: green;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  row-gap: 3rem;
+  h3, h4 {
+    margin: 0;
+    //background-color: rgb(230, 255, 230);
+    width: 25rem;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    @include m.phone_380 {
+     width: 28rem;
+    }
+    @include m.phone_400 {
+     width: 32rem; 
+    }
+    @include m.tablet_768 {
+      width: 55rem;
+    }
+  }
+  h3 {
+    font-size: 5rem;
+    font-weight: 500;
+    @include m.phone_380 {
+      font-size: 6rem;
+    }
+    @include m.desktop_1020 {
+      font-size: 9rem;  
+    }
+  }
+  h4 {
+    font-size: 2rem;
+    font-weight: 500;
+    @include m.phone_380 {
+      font-size: 2.3rem;
+    }
+    span {
+      font-weight: 700;
+    }
+  }
+}
+
+.nurse_topred {
+  position: absolute;
+  @include m.tablet_768 {
+    width: 50rem;
+  }
+}
+
+.bloque1_logo {
+  width: 17rem;
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  @include m.tablet_768 {
+    top: 3rem;
+    left: 3rem;
+    width: 23rem;
+  }
+}
+
+.nurse_bottom {
+  width: 20rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  @include m.tablet_768 {
+    display: none;
+  }
+}
+
+.bloque1_logo_desktop {
+  width: 17rem;
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  @include m.tablet_768 {
+  top: 3rem;
+  left: 3rem;
+  width: 23rem;
+  }
+}
+
+.bloque1_shield_desktop_blue {
+  display: none;
+  @include m.tablet_768 {
+    display: block;
+    width: 50rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+  }
+}
+

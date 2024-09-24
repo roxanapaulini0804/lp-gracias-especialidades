@@ -1,0 +1,107 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.bloque2 {
+    background-color: black;
+    padding: 4rem 0;
+    height: auto;
+    position: relative;
+    @include m.desktop_1020 {
+        padding: 6rem 0;
+    }
+}
+
+
+
+.bloque2Title {
+    // background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+    h3 {
+        margin: 0;
+        width: 70%;
+        // background-color: green;
+        padding: 1rem 0;
+        text-align: center;
+        font-size: 2rem;
+        color: white;
+        @include m.phone_380 {
+            font-size: 2.5rem;
+        }
+        @include m.desktop_1020 {
+            font-size: 3rem;
+        }
+    }
+}
+
+.bloque2Container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+    row-gap: 2rem;
+    margin-top: 2rem;
+    @include m.desktop_1020 {
+        flex-direction: row;
+        justify-content: center;
+        column-gap: 8rem;
+    }
+}
+
+.bloque2__item {
+    width: 20rem;
+    // background-color: red;
+    text-align: center;
+    @include m.desktop_1020 {
+        width: 40rem;
+        display: flex;
+        column-gap: 2rem;
+        align-items: center;
+    }
+    h3 {
+        margin: 0;
+        padding: 1rem 0;
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: white;
+        @include m.desktop_1020 {
+            font-size: 1.8rem;
+            font-weight: 500;
+        }
+    }
+    img {
+        width: 8rem;
+        height: 8rem;
+    }
+}
+
+
+
+    .bloque2_lp-gracias-triangulo-blue {
+   
+   
+    display: none;
+    @include m.desktop_1020{
+        display: block;
+        left:0;
+      
+        //width:62rem;
+        width: 70%;
+        position:absolute;
+        height: 100%;
+        top:0;
+        z-index: 1; 
+
+    }
+   }
+ 
+    
+
+
+   
+
+

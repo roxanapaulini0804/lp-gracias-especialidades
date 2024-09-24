@@ -1,0 +1,110 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.bloque3 {
+    padding: 2rem 0;
+    // background-color: purple;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloque3__item--line {
+    // background-color: red;
+    height: 2rem;
+    width: 27rem;
+    position: absolute;
+    bottom: 0;
+    border-bottom: 2px solid black;
+    @include m.desktop_1020 {
+        width: 70rem;
+    }
+}
+
+.bloque3__item {
+    width: 30rem;
+    //background-color: orange;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 15rem;
+    row-gap: .9rem;
+    @include m.desktop_1020 {
+        width: 80rem;
+        height: 30rem;
+    }
+    &:nth-child(1) {
+        // background-color: green;
+        position: relative;
+    }
+    h3, h4 {
+        margin: 0;
+        // background-color: red;
+        width: 25rem;
+        text-align: center;
+        color: black;
+        @include m.desktop_1020 {
+            width: 35rem;
+        }
+    }
+    h3 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        @include m.desktop_1020 {
+            font-size: 3rem;
+        }
+        span {
+            font-weight: 800;
+        }
+    }
+    h4 {
+        font-size: 1.6rem;
+        text-decoration: underline;
+        font-weight: 500;
+        cursor: pointer;
+        @include m.desktop_1020 {
+            font-size: 2.5rem;
+        }
+    }
+    button {
+        position: relative;
+        height: 4rem;
+        width: 25rem;
+        background-color: black;
+        border: none;
+        border-radius: 2rem;
+        @include m.desktop_1020 {
+            width: 40rem;
+            height: 5rem;
+        }
+        img {
+            position: absolute;
+            width: 2.5rem;
+            height: 2.5rem;
+            left: 2.5rem;
+            top: .7rem;
+            @include m.desktop_1020 {
+                width: 3.5rem;
+                height: 3.5rem;
+                left: 3.2rem;
+            }
+        }
+        h3 {
+            color: white;
+            padding-left: 2rem;
+            font-size: 1.4rem;
+            @include m.desktop_1020 {
+                font-size: 2.5rem;
+                padding-left: 7rem;
+            }
+      }
+    
+    
+        
+}
+
+}
+    
+    
